@@ -1,17 +1,17 @@
 const express = require('express')
 const mongoose = require('mongoose')
-const cors = require('cors')
-
-const routes = require('./routes') // Importar arquivo da pasta
+const cors = require('cors');
+const routes = require('./routes') 
 
 const server = express()
 
-mongoose.connect('Link para conectar no banco', {
+mongoose.connect('Endereço banco de dados no Atlas', {
     useNewUrlParser: true
 })
 
-server.use(cors())
+server.use(cors()) 
 server.use(express.json())
-server.use(routes) // Colocar config de outro arquivo
+server.use(routes) 
 
-server.listen(3333)
+
+server.listen(xxxx)

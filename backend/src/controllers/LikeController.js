@@ -19,6 +19,6 @@ module.exports = {
         loggedDev.likes.push(targetDev._id)
 
         await loggedDev.save()
-        return loggedDev
+        return res.json(loggedDev)
     }
 }
