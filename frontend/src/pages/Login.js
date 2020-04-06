@@ -16,7 +16,6 @@ export default function Login({ history }){
     })
 
     const { _id } = response.data
-
     history.push(`/dev/${_id}`)
   }
 
@@ -25,7 +24,7 @@ export default function Login({ history }){
       <form onSubmit={handleSubmit}>
         <img src={logo} alt="Tindev"></img>
         <input 
-          placeholder="Digite seu usuário no Github"
+          placeholder="Informe seu usuário do Github"
           value={username}
           onChange={e => setUsername(e.target.value)}
         />
